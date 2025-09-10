@@ -6,7 +6,6 @@ Main entry point for the Koteria application with simplified structure.
 
 import streamlit as st
 from streamlit_option_menu import option_menu
-from streamlit_extras.app_logo import add_logo
 from app.config import get_credentials
 from app.utils import initialize_session_state
 from app.pages.dashboard import welcome
