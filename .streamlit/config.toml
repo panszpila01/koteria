@@ -1,8 +1,9 @@
 [theme]
-primaryColor = "#FF6B6B"
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F0F2F6"
-textColor = "#262730"
+base = "light"
+primaryColor = "#1A73E8"             # Example accent color
+backgroundColor = "#F5F7FA"          # Light background
+secondaryBackgroundColor = "#E8EDF1" # Sidebar or widget background
+textColor = "#202124"                # Dark text
 font = "sans serif"
 
 [server]
