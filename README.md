@@ -33,7 +33,7 @@ Koteria/
 ├── data/                         # Data storage
 │   ├── raw/                     # Raw data files
 │   └── processed/               # Processed data files
-├── app.py                        # Main application entry point
+├── main.py                       # Main application entry point
 ├── requirements.txt              # Python dependencies
 ├── TROUBLESHOOTING.md           # Troubleshooting guide
 └── README.md                     # This file
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 3. Run the main application:
 ```bash
-streamlit run app.py
+streamlit run main.py
 ```
 
 ## 📖 Usage
@@ -63,7 +63,7 @@ streamlit run app.py
 
 1. **Start the system:**
    ```bash
-   streamlit run app.py
+   streamlit run main.py
    ```
 
 2. **Login with available users:**
