@@ -3,7 +3,7 @@ Configuration system for Koteria App.
 
 Centralized configuration management following Streamlit best practices.
 """
-
+import streamlit as st
 from dataclasses import dataclass
 from typing import Dict, Any
 
@@ -60,5 +60,13 @@ def get_user_app(username: str) -> str:
 
 
 def get_credentials() -> Dict[str, str]:
-    """Get all credentials."""
+    """Get all credentials from secrets.toml or fallback to defaults."""
+    try:
+        # Try to get credentials from secrets.toml
+        if "login" in st.secrets and "credentials" in st.secrets["login"]:
+            return st.secrets["login"]["credentials"]
+    except Exception:
+        pass
+    
+    # Fallback to default credentials if secrets are not available
     return DEFAULT_CREDENTIALS
